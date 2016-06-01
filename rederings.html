@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/rederings.css"/>
+	</head>
+	<body>
+		<header id="header" class="clearfix">
+		<nav>
+			<a href="/" class="logo">
+				<img src="img/png1/logo.png">
+			</a>
+			<ul class="clearfix">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="renderings.html">Renderings</a></li>
+				<li><a href="bim.html">BIM</a></li>
+				<li><a href="animate.html">3D Animate</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<a href="javascript:void(0);" id="rightBtn"><img src="img/nav.png"/></a>
+		</nav>
+	</header>
+		
+		<h2 class="title">OUR SERVICE</h2>
+		
+		<div id="wrap">
+			<div id="inner" class="clearfix">
+				<a href="###">
+					<img src="img/png1/datu.png" alt="" />
+				</a>
+				<a href="###">
+					<img src="img/png1/datu.png" alt="" />
+				</a>
+				<a href="###">
+					<img src="img/png1/datu.png" alt="" />
+				</a>
+				<a href="###">
+					<img src="img/png1/datu.png" alt="" />
+				</a><a href="###">
+					<img src="img/png1/datu.png" alt="" />
+				</a>
+				<a href="###">
+					<img src="img/png1/datu.png" alt="" />
+				</a>
+				<a href="###">
+					<img src="img/png1/datu.png" alt="" />
+				</a>
+				<a href="###">
+					<img src="img/png1/datu.png" alt="" />
+				</a>
+			</div>
+			<div class="paganation" id="paganation">
+				<span class="active">1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>4</span>
+				<span>5</span>
+				<span>6</span>
+				<span>7</span>
+				<span>8</span>
+			</div>
+			<a href="###" class="left-arrow"><span>&lt;</span></a>
+			<a href="###" class="right-arrow"><span>&gt;</span></a>
+		</div>
+		
+		<!--瀑布流-->
+		<ul id="pubu">
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		
+		<div id="pubuMask">
+			<div id="tanchuang"></div>
+		</div>
+	
+	<div class="footerBg">
+	<footer id="footer">
+		<section>
+			<h2 class="title">CONTACT US</h2>
+			<img src="img/png1/xsj.png"/>
+			<p>Email：eric@shining365.com</p>
+			<p>Mobile Phone：86 138 1690 3400</p>
+			<p>Tel：
+				<a href="tel:021-65986866-304">+86 21 6598 6866-304</a> 
+				<a href="tel:021-65983188-304">+86 21 6598 3188-304</a>
+			</p>
+		</section>
+		<div class="bottom">
+			Copyright&copy;1998-2015 shining Group
+		</div>
+	</footer>
+	</div>
+		
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/rederings.js"></script>
+		<script type="text/javascript">
+			$("#rightBtn").on("click",function(){
+				$("#header ul").toggle();
+//				$("#header ul li").eq(0).addClass("active").siblings().removeClass("active");
+			})
+			window.onresize=function(){
+				console.log($("#rightBtn").css("display"))
+				if($("html").width()>786 && $("#header ul").css("display")=="none"){
+					$("#header ul").show()
+					console.log($("html").width())
+				}
+			}
+		</script>
+	</body>
+</html>

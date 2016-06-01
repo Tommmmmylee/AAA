@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/header-footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/rederings.css"/>
+	</head>
+	<body>
+		<header id="header">
+			<div class="clearfix"> 		
+				<a href="###" class="logo"><img src="img/png1/logo.png"/></a>
+			<ul class="clearfix">
+				<li class="active"><a href="###">Home</a></li>
+				<li><a href="###">ABOUT</a></li>
+				<li><a href="###">Renderings</a></li>
+				<li><a href="###">BIM</a></li>
+				<li><a href="###">3D Anlmate</a></li>
+				<li><a href="###">Contact</a></li>
+			</ul>
+			<button id="rightBtn"><img src="img/nav.png" alt="" /></button>						
+			</div>
+		</header>
+		
+		<div class="containerHead"><span>━━━━━ &nbsp </span>Digital Effect Drawing<span> &nbsp ━━━━━</span></div>
+		
+		<div id="wrap" class="swiper-container">
+			<div id="inner" class="clearfix swiper-inner">
+				<a href="###" class="swiper-slide">
+					<img src="img/png1/datu.png" alt="" />
+				</a>
+				<a href="###" class="swiper-slide">
+					<img src="img/png1/datu.png" alt="" />
+				</a>
+				<a href="###" class="swiper-slide">
+					<img src="img/png1/datu.png" alt="" />
+				</a>
+				<a href="###" class="swiper-slide">
+					<img src="img/png1/datu.png" alt="" />
+				</a>
+				<a href="###" class="swiper-slide">
+					<img src="img/png1/datu.png" alt="" />
+				</a>
+				<a href="###" class="swiper-slide">
+					<img src="img/png1/datu.png" alt="" />
+				</a>
+				<a href="###" class="swiper-slide">
+					<img src="img/png1/datu.png" alt="" />
+				</a>
+				<a href="###" class="swiper-slide">
+					<img src="img/png1/datu.png" alt="" />
+				</a>
+			</div>
+			<!--<div class="paganation" id="paganation">
+				<span class="active">1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>4</span>
+				<span>5</span>
+				<span>6</span>
+				<span>7</span>
+				<span>8</span>
+			</div>-->
+			<a href="###" class="swiper-left-arrow"><span>&lt;</span></a>
+			<a href="###" class="swiper-right-arrow"><span>&gt;</span></a>
+		</div>
+		
+		
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.swiper.js"></script>
+		<script type="text/javascript">
+			$("#rightBtn").on("click",function(){
+				$("#header ul").toggle();
+//				$("#header ul li").eq(0).addClass("active").siblings().removeClass("active");
+			})
+			window.onresize=function(){
+				console.log($("#rightBtn").css("display"))
+				if($("html").width()>786 && $("#header ul").css("display")=="none"){
+					$("#header ul").show()
+					console.log($("html").width())
+				}
+			}
+			
+			$(".swiper-container").eq(0).swiper({
+				animateFlag:true,
+				autoPlay:true
+			})
+			$(".swiper-container").eq(1).swiper();
+		</script>
+	</body>
+</html>
+

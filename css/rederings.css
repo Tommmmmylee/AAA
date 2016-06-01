@@ -1,0 +1,145 @@
+.containerHead {
+	padding-top: 5%;
+	padding-bottom: 2%;
+}
+#wrap {
+	position: relative;
+	width: 100%;
+	/*height: 704px;*/
+	overflow: hidden;
+	/*z-index: 1;*/
+}
+#wrap:hover .right-arrow,#wrap:hover .left-arrow {
+	opacity: 1;
+}
+#inner {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 800%;
+}
+#inner a {
+	float: left;
+	width: 12.5%;
+	/*height: 704px;*/
+	-webkit-user-select:none;
+}
+.paganation {
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	width: 100%;
+	text-align:center;
+	-webkit-user-select:none;
+}
+.paganation span {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%;
+	background-color: #fff;	
+	margin-right: 2%;
+}
+.paganation span.active {
+	background-color: red;
+	color: #fff;
+}
+a {
+	text-decoration: none;
+}
+.left-arrow {
+	opacity: 0;
+	transition: all 1s;
+	position: absolute;
+	font-family: "宋体";
+	left: 0;
+	top: 0;
+	width: 40px;
+	height: 100%;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 4rem;
+	/*margin-top: 45%;*/
+	background-color: rgba(0,0,0,.5);
+	-webkit-user-select:none;
+}
+.left-arrow span,.right-arrow span {
+	margin-top: -20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -10px;
+}
+.right-arrow {
+	opacity: 0;
+	transition: all 1s;
+	position: absolute;
+	font-family: "宋体";
+	right: 0;
+	top: 0;
+	width: 40px;
+	height: 100%;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 40px;
+	/*margin-top: 45%;*/
+	background-color: rgba(0,0,0,.5);
+	-webkit-user-select:none;
+}
+
+/*瀑布流*/
+#pubu {
+	overflow:hidden ;
+	width: 100%;
+	margin: 5% auto;
+}
+#pubu li {
+	float: left;
+	width: 31%;
+	margin: 1%;
+}
+#pubu li img {
+	margin-bottom: 10px;
+	float: left;
+	opacity: 1;
+}
+#pubu li img:hover {
+	opacity: 0.8;
+}
+
+/*点击变大图*/
+#pubuMask {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	background-color: rgba(0,0,0,.8);
+}
+#tanchuang {
+	z-index: 11;
+	position: absolute;2
+	left: 50%;
+	top: 50%;
+}
+#footer {
+	width: 100%;
+	position: fixed;
+	background-color: #FFF;
+	/*left: 30%;*/
+	bottom: 0;
+}
+#footer img {
+	width: 30px;
+	margin: 0 auto 30px;
+}
+#footer bottom {
+	margin-top: 3.8%;
+}
+#footer section h2 {
+	margin-bottom: 1.8%;
+}

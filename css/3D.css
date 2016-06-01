@@ -1,0 +1,63 @@
+#main a{
+	width: 100%;
+	position: relative;	
+}
+#main a video {
+	width: 100%;
+}
+#main a section {
+	width: 100%;
+	padding-left: 2%;
+	box-sizing: border-box;
+	background-color: rgba(0,0,0,.7);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: rgba(255,255,255,.5);
+}
+#main ul {
+	width: 80%;
+	margin: 0 auto;
+}
+#main ul li {
+	width: 100%;
+}
+#main ul li img {
+	width: 70%;
+	/*float: left;*/
+	display: inline-block;
+	vertical-align: middle;
+}
+#main ul li p {
+	width: 28%;
+	/*float: right;*/
+	display: inline-block;
+	vertical-align: middle;
+}
+#main a p span:first-child {
+	font-size: 3rem;
+}
+#main a p span:last-child {
+	width: 60%;
+	font-size: 1.5rem;
+}
+.li2 a p,.li4 a p {
+	/*margin-right: 70%;*/
+	float: left;
+	padding-top: 5%;
+	box-sizing: border-box;
+	text-align: right;
+}
+.li2 a img,.li4 a img {
+	float: right;
+}
+#footer img {
+	width: 30px;
+	margin: 0 auto 30px;
+}
+#footer bottom {
+	margin-top: 3.8%;
+}
+#footer section h2 {
+	margin-bottom: 1.8%;
+}
